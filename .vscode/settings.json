@@ -11,9 +11,11 @@
         "fazer",
         "fiap",
         "fivetechcolletive",
+        "mensagem",
         "Postmon",
         "retorná",
-        "Salvar"
+        "Salvar",
+        "springframework"
     ],
     "java.compile.nullAnalysis.mode": "automatic"
 }
