@@ -37,7 +37,7 @@ No cenário altamente competitivo do setor de varejo, a conversão de leads em n
 - A aplicação respeita os conceitos fundamentais do REST e de acordo com a maturidade de nível 1 - 15 pts [ok]
 - A gestão de configuração dos artefatos de software, o repositório está publicado devidamente no GitHub - 10 pts [ok]
 - Link do GitHub - 10 pts [ok]: https://github.com/brunociccio/FiveTechColletive
-- Link do Pitch no YouTube [versão 1 do Pitch, iremos produzir uma outra]:
+- Link do Pitch no YouTube [versão 1 do Pitch, iremos produzir uma outra]: https://youtu.be/jTpoI_ScsZ8
 
 ## Cronograma
 

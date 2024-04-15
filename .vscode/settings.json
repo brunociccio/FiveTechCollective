@@ -14,5 +14,6 @@
         "Postmon",
         "retorná",
         "Salvar"
-    ]
+    ],
+    "java.compile.nullAnalysis.mode": "automatic"
 }
