@@ -37,16 +37,17 @@ No cenário altamente competitivo do setor de varejo, a conversão de leads em n
 - A aplicação respeita os conceitos fundamentais do REST e de acordo com a maturidade de nível 1 - 15 pts [ok]
 - A gestão de configuração dos artefatos de software, o repositório está publicado devidamente no GitHub - 10 pts [ok]
 - Link do GitHub - 10 pts [ok]: https://github.com/brunociccio/FiveTechColletive
-- Link do Pitch no YouTube [versão 1 do Pitch, iremos produzir uma outra]: 
+- Link do Pitch no YouTube [versão 1 do Pitch, iremos produzir uma outra]:
 
 ## Cronograma
 
 - [ ] CRUD de Cadastro de Usuários (implementado - sprint 1)
+- [ ] No Diagrama de Classe 1 consta que algumas classes possuem herança da classe pai Cadastrar, porém, o código não estava rodando adequadamente por questões de dependencias e versoes que implicaram diretamente na função "extends" para aplicar nas classes filhas, decorrente desse problema, as heranças serão aplicadas e corrigidas até a entrega do Sprint 2
 - [ ] CRUD de Login (será implementado até a sprint 2)
 - [ ] Dashboard (será implementado conforme a evoluação das telas entregues pelo responsavel de Mobile App - sprints 2, 3 e 4)
 - [ ] IA (será implementando conforme o desenvolvimento dos datasets que será tratados com base em IA Generativa junto a nossa aplicação - sprints 2, 3 e 4)
 - [ ] Banco de Dados (implementado parcialmente, evoluirá conforme o decorrer do projeto e a implementação das outras classes - sprint 1, 2, 3 e 4)
-- [ ] Diagrama de Classes 1 - Login e Cadastro (parte de cadastro implementada / login será implementada com o nível de maturidade 2 - sprint 2)
+- [ ] Diagrama de Classes 1 - Login e Cadastrar (parte de cadastro implementada / login será implementada com o nível de maturidade 2 - sprint 2)
 - [ ] Diagrama de Classes 2 - Funcionalidades da Aplicação (será implementado junto a evoluação das matérias no decorrer da entraga das sprints 2, 3 e 4)
 - [ ]
 
