@@ -36,7 +36,7 @@ No cenário altamente competitivo do setor de varejo, a conversão de leads em n
 - Implementação das classes de Entidade necessárias para solução, atenção devida ao encapsulamento, tipagem dos atributos e ao mapeamento  objeto relacional com JPA - Consta no cronograma - primeiro Diagrama de Classe já implementado no projeto com as classes relacionadas ao Cadastro de usuários em nossa aplicação - 40 pts [ok]
 - A aplicação respeita os conceitos fundamentais do REST e de acordo com a maturidade de nível 1 - 15 pts [ok]
 - A gestão de configuração dos artefatos de software, o repositório está publicado devidamente no GitHub - 10 pts [ok]
-- Link do GitHub - 10 pts [ok]: https://github.com/brunociccio/5TECH
+- Link do GitHub - 10 pts [ok]: https://github.com/brunociccio/FiveTechColletive
 - Link do Pitch no YouTube [versão 1 do Pitch, iremos produzir uma outra]: 
 
 ## Cronograma
