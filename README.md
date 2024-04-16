@@ -5,9 +5,13 @@ API do Projeto 5Tech Colletive
 ## Integrantes do Grupo e Matérias que são responsáveis
 
 BRUNO MATHEWS DE CICICO OLIVEIRA - RM 99097 - Java Advanced e Devops
+
 ISABELLE CORSI - RM 97751 - Mastering Relational and Non-Relationl Database
+
 JOSÉ LUIZ FERREIRA DUARTE - RM 99488 - Mobile Application Development
+
 MARINA DE SOUZA CUCCO - RM 551569 - Complice, Quality Assurance and Tests e Disruptive Architectures
+
 THALITA FACHINETE DE ALENCAR - RM 99292 - Advanced Business Development With .NET e Disruptive Architectures
 
 ## Objetivo do Projeto
