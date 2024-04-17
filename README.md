@@ -1,4 +1,4 @@
-# 5Tech Colletive
+# 5Tech Collective
 
 API do Projeto 5Tech Colletive 
 
