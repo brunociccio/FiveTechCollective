@@ -1,21 +1,26 @@
 package br.com.fiap.fivetechcolletive.model;
 
-import java.util.Date;
+import java.time.LocalDate;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Positive;
-import javax.validation.constraints.Size;
-
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Temporal;
+import jakarta.persistence.TemporalType;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Positive;
+import jakarta.validation.constraints.Size;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
-@Entity
 @Data
+@Entity
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Cadastrar {
     
     @Id
@@ -26,11 +31,14 @@ public class Cadastrar {
     private String nome;
 
     @Temporal(TemporalType.DATE)
-    private Date dataNascimento;
+    private LocalDate dataNascimento;
 
     // Sexo é opcional e pode ser 'M' (masculino), 'F' (feminino), ou 'não informado'
     @Size(min = 1, max = 1)
     private String sexo;
+
+    @NotBlank(message = "Seu estado civil é obrigatório")
+    private String estadoCivil;
 
     @NotBlank(message = "A escolaridade é obrigatória")
     private String escolaridade;
