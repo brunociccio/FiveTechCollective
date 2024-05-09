@@ -21,7 +21,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Cadastrar {
+public class Cadastro {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
