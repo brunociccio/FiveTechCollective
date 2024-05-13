@@ -1,6 +1,8 @@
 package br.com.fiap.fivetechcolletive.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheConfig;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -9,15 +11,26 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.fiap.fivetechcolletive.model.CadastrarCnpj;
 import br.com.fiap.fivetechcolletive.repository.CadastrarCnpjRepository;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
+import lombok.extern.slf4j.Slf4j;
 
 @RestController
-@RequestMapping("/api/cadastrarCnpj")
+@RequestMapping("cadastrarCnpj")
+@Slf4j
+@CacheConfig(cacheNames = "cadastrosCnpj")
+@Tag(name = "cadastrosCnpj")
 public class CadastrarCnpjController {
 
     @Autowired
     private CadastrarCnpjRepository cadastrarCnpjRepository;
 
     @GetMapping("/{id}")
+    @Cacheable
+    @Operation(
+        summary = "CadastroCnpj",
+        description = "Endpoints relacionados ao cadastro de CNPJs"
+    )
     public ResponseEntity<CadastrarCnpj> buscarCadastrarCnpjPorId(@PathVariable int id) {
         CadastrarCnpj cadastrarCnpj = cadastrarCnpjRepository.findById(id);
         if (cadastrarCnpj != null) {
