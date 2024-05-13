@@ -37,5 +37,6 @@ public class CadastrarCnpj {
     private LocalDate dataAberturaEmpresa;
     
     private Integer qtdFuncionarios;
+
 }
 

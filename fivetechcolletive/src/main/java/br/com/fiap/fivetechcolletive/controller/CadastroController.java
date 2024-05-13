@@ -36,7 +36,7 @@ public class CadastroController {
     @GetMapping()
     @Cacheable
     @Operation(
-        summary = "Cadastro",
+        summary = "Lista de Cadastros",
         description = "Endpoints relacionados a cadastro"
     )
     public List<Cadastro> index() {

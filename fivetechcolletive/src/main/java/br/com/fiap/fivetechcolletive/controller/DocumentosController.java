@@ -24,7 +24,7 @@ import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 
 @RestController
-@RequestMapping("/api/documentos")
+@RequestMapping("documento")
 @Slf4j
 @CacheConfig(cacheNames = "documentos")
 @Tag(name = "documentos")
