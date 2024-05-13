@@ -43,239 +43,27 @@ No cenário altamente competitivo do setor de varejo, a conversão de leads em n
 - Link do GitHub - 10 pts [ok]: https://github.com/brunociccio/FiveTechColletive
 - Link do Pitch no YouTube [versão 1 do Pitch, iremos produzir uma outra]: https://youtu.be/jTpoI_ScsZ8
 
-## Cronograma
+## Cronograma e Implementações
 
-- [ ] CRUD de Cadastro de Usuários (implementado - sprint 1)
-- [ ] No Diagrama de Classe 1 consta que algumas classes possuem herança da classe pai Cadastrar, porém, o código não estava rodando adequadamente por questões de dependencias e versoes que implicaram diretamente na função "extends" para aplicar nas classes filhas, decorrente desse problema, as heranças serão aplicadas e corrigidas até a entrega do Sprint 2
-- [ ] CRUD de Login (será implementado até a sprint 2)
-- [ ] Dashboard (será implementado conforme a evoluação das telas entregues pelo responsavel de Mobile App - sprints 2, 3 e 4)
-- [ ] IA (será implementando conforme o desenvolvimento dos datasets que será tratados com base em IA Generativa junto a nossa aplicação - sprints 2, 3 e 4)
-- [ ] Banco de Dados (implementado parcialmente, evoluirá conforme o decorrer do projeto e a implementação das outras classes - sprint 1, 2, 3 e 4)
-- [ ] Diagrama de Classes 1 - Login e Cadastrar (parte de cadastro implementada / login será implementada com o nível de maturidade 2 - sprint 2)
-- [ ] Diagrama de Classes 2 - Funcionalidades da Aplicação (será implementado junto a evoluação das matérias no decorrer da entraga das sprints 2, 3 e 4)
-- [ ]
+- [ ] CRUD da classe Cadastro (implementado - sprint 1)
+- [ ] CRUD das outras classes: CadastrarCnpj, Contato, Documentos e Endereço (implementado - sprint 2, na sprint 3 será implementada uma API no frontend para a busca do endereço através do CEP)
+- [ ] CRUD de Login (será implementado até a sprint 3, utilizará uma API de autenticação)
+- [ ] Dashboard (será implementado conforme a evoluação das telas entregues pelo responsavel de Mobile App - sprints 3 e 4)
+- [ ] IA (será implementando conforme o desenvolvimento dos datasets que será tratados com base em IA Generativa junto a nossa aplicação - sprints 3 e 4)
+- [ ] Banco de Dados (implementado parcialmente, evoluirá conforme o decorrer do projeto e a implementação das outras classes - sprint 3 e 4)
+- [ ] Diagrama de Classes 1 - Login e Cadastrar (implementado no sprint 1 e 2)
+- [ ] Diagrama de Classes 2 - Funcionalidades da Aplicação (será implementado junto a evoluação das matérias no decorrer da entraga das sprints 3 e 4)
+- [ ] Documentação de todos os endpoints e funcionalidades do projeto foram implementados com swagger (implementado na sprint 2)
+- [ ] Aplicação do admin criado em outro projeto Java / Spring (implementado na sprint 2)
 
 # Documentação da API
 
-### Endpoints relacionados ao Cadastro do Usuário 
+A aplicação roda no http://localhost:8080/home
 
-- [Listar todos os cadastros](#Listar)
-- [Buscar cadastro por ID](#Buscar)
-- [Cadastrar novo usuário](#Cadastrar)
+A documentação roda:
+springdoc.swagger-ui.path=/docs
+http://localhost:8080/swagger-ui/index.html#/
 
-## Listar
-
-`GET` /cadastros : Retorna todos os cadastros de usuários.
-
-#### Exemplo de Resposta
-
-```js
-[
-    {
-        "id": 1,
-        "nome": "Usuário 1",
-        "email": "usuario1@example.com"
-    },
-    {
-        "id": 2,
-        "nome": "Usuário 2",
-        "email": "usuario2@example.com"
-    }
-]
-```
-
-#### Códigos de Status [status code]
-
-|código|descrição
-|------|---------
-|200|Autenticação bem sucedida
-|404|Usuário não encontrado
-
-## Buscar
-
-`GET` /cadastros/{id} : Retorna o cadastro do usuário com o ID especificado.
-
-#### Parametros de URL
-
-|Parametro|tipo|descrição
-|-----|----|---------
-id|Long|Id do Usuário
-
-#### Exemplo de Resposta
-
-```js
-{
-    "id": 1,
-    "nome": "Usuário 1",
-    "email": "usuario1@example.com"
-}
-```
-
-#### Códigos de Status [status code]
-
-|código|descrição
-|------|---------
-|200|Autenticação bem sucedida
-|404|Usuário não encontrado
-
-## Cadastrar
-
-`POST` /cadastros : Cadastra um novo usuário.
-
-#### Corpo da Requisição
-
-|campo|tipo|obrigatório|descrição
-|-----|----|:-----------:|---------
-|nome|String|sim|Nome do usuário
-|email|String|sim|Email do usuário
-
-#### Exemplo de Requisição
-
-```js
-//POST /cadastros
-{
-    "nome": "Novo Usuário",
-    "email": "novo_usuario@example.com"
-}
-
-```
-
-#### Exemplo de Resposta
-
-```js
-{
-    "id": 3,
-    "nome": "Novo Usuário",
-    "email": "novo_usuario@example.com"
-}
-
-```
-
-#### Códigos de Status [status code]
-
-|código|descrição
-|------|---------
-|201|Usuário cadastrado com sucesso
-|400|Validação falhou. Verifique o corpo da requisição
-
----------------------------------------------------------------------------------------------------------------------------------------
-### Endpoints relacionados ao Cadastro de CNPJ
-
-- [Buscar cadastro CNPJ por ID](#BuscarCNPJ)
-
-## BuscarCNPJ
-
-`GET` /api/cadastrarCnpj/{id} : Retorna o cadastro de CNPJ com o ID especificado.
-
-#### Parametros de URL
-
-|Parametro|tipo|descrição
-|-----|----|---------
-id|int|Id do cadastro CNPJ
-
-#### Exemplo de Resposta
-
-```js
-{
-    "id": 1,
-    "cnpj": "12345678901234",
-    "nomeFantasia": "Empresa XYZ",
-    "endereco": "Rua ABC, 123",
-    "telefone": "(11) 1234-5678"
-}
-
-```
-
-#### Códigos de Status [status code]
-
-|código|descrição
-|------|---------
-|201|Usuário cadastrado com sucesso
-|404|Cadastro de CNPJ não encontrado
-
----------------------------------------------------------------------------------------------------------------------------------------
-
-### Endpoints relacionados à Documentação
-
-- [Buscar documentação por ID](#BuscarDocumentação)
-- [Criar nova documentação](#CriarDocumentação)
-
-## BuscarDocumentação
-
-`GET` /api/documentacao/{id} : Retorna a documentação com o ID especificado.
-
-#### Parametros de URL
-
-|Parametro|tipo|descrição
-|-----|----|---------
-id|int|Id da doumentação
-
-#### Exemplo de Resposta
-
-```js
-{
-    "id": 1,
-    "titulo": "Documentação do Projeto",
-    "descricao": "Esta é a documentação detalhada do projeto XYZ.",
-    "versao": "1.0",
-    "dataCriacao": "2024-04-14",
-    "autor": "João Silva"
-}
-
-```
-
-#### Códigos de Status [status code]
-
-|código|descrição
-|------|---------
-|200|Requisição bem-sucedida
-|404|Documentação não encontrada
-
-## CriarDocumentação
-
-`POST` /api/documentacao : Cria uma nova documentação.
-
-#### Corpo da Requisição
-
-|campo|tipo|obrigatório|descrição
-|-----|----|:-----------:|---------
-titulo|String|Sim|Título da documentação
-descricao|String|Sim|Descrição da documentação
-versao|String|Sim|Versão da documentação
-dataCriacao|String|Sim|Data de criação da documentação (no formato "yyyy-MM-dd")
-autor|String|Sim|Autor da documentação
-cpf|String|Sim|CPF do autor da documentação
-rg|String|Sim|RG do autor da documentação
-
-#### Exemplo de Requisição
-
-```js
-// POST /api/documentacao
-{
-    "titulo": "Documentação do Projeto",
-    "descricao": "Esta é a documentação detalhada do projeto XYZ.",
-    "versao": "1.0",
-    "dataCriacao": "2024-04-14",
-    "autor": "João Silva",
-    "cpf": "123.456.789-01",
-    "rg": "123456789"
-}
-
-
-```
-
-#### Exemplo de Resposta
-
-```js
-{
-    "id": 1,
-    "titulo": "Documentação do Projeto",
-    "descricao": "Esta é a documentação detalhada do projeto XYZ.",
-    "versao": "1.0",
-    "dataCriacao": "2024-04-14",
-    "autor": "João Silva",
-    "cpf": "123.456.789-01",
-    "rg": "123456789"
-}
-
-```
+O console de adm está no repositório do GitHub:
+https://github.com/brunociccio/ADM-Java-Spring.git
+spring.boot.admin.client.url=http://localhost:9090
