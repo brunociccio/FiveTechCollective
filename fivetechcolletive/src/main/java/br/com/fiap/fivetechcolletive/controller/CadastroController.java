@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
+import org.springframework.data.web.PagedResourcesAssembler;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
@@ -32,6 +33,10 @@ public class CadastroController {
 
     @Autowired
     CadastroRepository repository;
+
+    @Autowired
+    PagedResourcesAssembler<Cadastro> pageAssembler;
+
 
     @GetMapping()
     @Cacheable
@@ -97,4 +102,5 @@ public class CadastroController {
         log.info("Apagando cadastro: {}", id);
         repository.deleteById(id);
     }
+    
 }

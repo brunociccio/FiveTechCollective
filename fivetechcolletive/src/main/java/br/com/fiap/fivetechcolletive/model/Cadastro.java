@@ -48,5 +48,6 @@ public class Cadastro {
 
     @Positive(message = "A renda deve ser um número positivo")
     private Double renda;
+    
 
 }
