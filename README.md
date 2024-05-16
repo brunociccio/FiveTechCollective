@@ -2,7 +2,7 @@
 
 API do Projeto 5Tech Colletive 
 
-## Integrantes do Grupo e Matérias que são responsáveis
+## Integrantes 
 
 BRUNO MATHEWS DE CICICO OLIVEIRA - RM 99097 - Java Advanced e Devops
 
