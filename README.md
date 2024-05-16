@@ -16,11 +16,17 @@ THALITA FACHINETE DE ALENCAR - RM 99292 - Advanced Business Development With .NE
 
 ## Objetivo do Projeto
 
-Desenvolver uma ferramenta capaz de analisar o comportamento de LEADS no setor de varejo, com estudos feitos em datasets tratados no setor financeiro (em porcentagem assertiva) para transformar um interesse em negócios concretos.
+ Desenvolver uma ferramenta capaz de analisar o comportamento de LEADS nosetor automobilístico, com base em estudos realizados em datasets tratados provenientes do segmento de carros elétricos. Nosso objetivo é transformar o interesse inicial dos leads
+ em negócios concretos, utilizando análises assertivas para identificar oportunidades específicas no mercado de carros elétricos. Essa abordagem visa fornecer às empresas do setor automobilístico insights valiosos para direcionar suas estratégias de marketing e
+ vendas, aproveitando ao máximo o potencial de crescimento desse segmento em ascensão
 
 ## Detalhamento do Objetivo
 
-No cenário altamente competitivo do setor de varejo, a conversão de leads em negócios concretos é crucial para o sucesso das empresas. No entanto, essa transição muitas vezes enfrenta desafios, como a falta de compreensão do comportamento dos leads e a dificuldade em identificar oportunidades promissoras. Para abordar essa questão, desenvolvemos uma ferramenta inovadora que utiliza análises avançadas de dados, com base em estudos do setor financeiro, para compreender e prever o comportamento dos leads com uma precisão notável. Ao aplicar modelos preditivos em datasets tratados do setor financeiro, nossa ferramenta oferece insights valiosos, transformando o interesse inicial em oportunidades de negócio tangíveis. Este projeto visa proporcionar às empresas do setor de varejo uma vantagem competitiva significativa, ao capacitar decisões estratégicas fundamentadas em dados e impulsionar a eficiência na conversão de leads.
+ No cenário altamente competitivo do setor automobilístico, a conversão de leads em negócios concretos é crucial para o sucesso das empresas. No entanto, essa transição enfrenta desafios, como a falta de compreensão do comportamento dos leads e a
+ dificuldade em identificar oportunidades promissoras. Para enfrentar esses desafios, estamos desenvolvendo uma ferramenta que utiliza análises avançadas de dados. Nossa abordagem é baseada em estudos específicos do segmento de carros elétricos,
+ comparando-os com o segmento de carros convencionais. Nosso objetivo é fornecer insights sobre o comportamento de compra dos usuários de carros convencionais que investem um valor equivalente ao de um carro elétrico, visando entender se eles podem se
+ tornar potenciais compradores do segmento de carros elétricos. Essa ferramenta visa compreender e prever o comportamento dos leads com precisão, aplicando modelos preditivos em datasets tratados do setor automobilístico. Dessa forma, buscamos oferecer
+ insights valiosos para as empresas do setor de automóveis elétricos, capacitando decisões estratégicas fundamentadas em dados e impulsionando a eficiência na conversão de leads
 
 ## Java Advanced - Aplicação Java e Spring Boot
 
