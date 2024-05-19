@@ -14,19 +14,30 @@ MARINA DE SOUZA CUCCO - RM 551569 - Complice, Quality Assurance and Tests e Disr
 
 THALITA FACHINETE DE ALENCAR - RM 99292 - Advanced Business Development With .NET e Disruptive Architectures
 
-## Objetivo do Projeto
+## OBJETIVO
 
- Desenvolver uma ferramenta capaz de analisar o comportamento de LEADS nosetor automobilístico, com base em estudos realizados em datasets tratados provenientes do segmento de carros elétricos. Nosso objetivo é transformar o interesse inicial dos leads
- em negócios concretos, utilizando análises assertivas para identificar oportunidades específicas no mercado de carros elétricos. Essa abordagem visa fornecer às empresas do setor automobilístico insights valiosos para direcionar suas estratégias de marketing e
- vendas, aproveitando ao máximo o potencial de crescimento desse segmento em ascensão
+Acelerar e privilegiar a entrada dos clientes Plusoft do setor automobilístico e do setor financeiro no mercado de carros elétricos, por meio da parceria advinda do compartilhamento, análise e tratamento de Machine Learning de dados disponíveis de ambos e de outros datasets. A resultante predição de comportamento do consumidor, sendo esses advindos da cartela desses clientes Plusoft ou não, identificará potenciais compradores de carros nessa nova modalidade além de clientes aptos a receber benefícios bancários para a compra.
+Os modelos de Inteligência Artificial e suas predições de comportamento, portanto, terão como objetivo identificar e prever comportamentos e potencialidades em clientes e, partir dessas análises, será possível não só segmentar campanhas de marketing, mas principalmente elaborar ofertas de benefícios bancários e parcerias estratégicas para acelerar a montagem, revenda e/ou fabricação de carros elétricos e pontos de recarga.
+Os benefícios dessa parceria entre banco e montadora são muitos e se alastram para as duas pontas. Em vista da crescente preocupação com questões de sustentabilidade, governo, consumidores e patrocinadores estão voltando seus interesses e esforços para empresas que contribuam com iniciativas sustentáveis. O ESG (Environmental, Social and Governance), sigla que representa a conformidade com aspectos ambientais, sociais e de governança na sociedade, se configura como um almejado indicativo de desempenho pelas empresas. 
+       	Além disso, é inegável a crescente nos mercados de carros elétricos no mundo. A procura por meios sustentáveis e altamente tecnológicos tende a crescer cada vez mais, como vem acontecendo em outros países. Segundo análise de Rystad Energy, “17,5 milhões de eletrificados devem ser comercializados no ano, um crescimento de 18,5% em relação a 2023”.
+
+Alguns exemplos de benefícios:
+Subsídios e isenções fiscais
+Expansão de base de clientes e aumento de participação no mercado
+Liderança tecnológica de diferenciação competitiva
+Inovação contínua por parte de montadora a partir da introdução de baterias de carregamento rápido
+Melhora da imagem da empresa por meio de responsabilidade ambiental
+Empresas que investem em veículos elétricos podem receber benefícios fiscais e subsídios e insumos governamentais.
+Ou seja, empresas que financiam, apoiam e/ou geram o crescimento do consumo de carros elétricos no Brasil têm grandes chances de se beneficiarem com aumento de lucros, melhoria da imagem corporativa, inovação contínua, ganho de incentivos fiscais, novas oportunidades de negócios e uma posição competitiva fortalecida no mercado.
 
 ## Detalhamento do Objetivo
 
- No cenário altamente competitivo do setor automobilístico, a conversão de leads em negócios concretos é crucial para o sucesso das empresas. No entanto, essa transição enfrenta desafios, como a falta de compreensão do comportamento dos leads e a
- dificuldade em identificar oportunidades promissoras. Para enfrentar esses desafios, estamos desenvolvendo uma ferramenta que utiliza análises avançadas de dados. Nossa abordagem é baseada em estudos específicos do segmento de carros elétricos,
- comparando-os com o segmento de carros convencionais. Nosso objetivo é fornecer insights sobre o comportamento de compra dos usuários de carros convencionais que investem um valor equivalente ao de um carro elétrico, visando entender se eles podem se
- tornar potenciais compradores do segmento de carros elétricos. Essa ferramenta visa compreender e prever o comportamento dos leads com precisão, aplicando modelos preditivos em datasets tratados do setor automobilístico. Dessa forma, buscamos oferecer
- insights valiosos para as empresas do setor de automóveis elétricos, capacitando decisões estratégicas fundamentadas em dados e impulsionando a eficiência na conversão de leads
+No cenário altamente competitivo do setor automobilístico, a conversão de leads em negócios concretos é crucial para o sucesso das empresas. No entanto, essa transição enfrenta desafios significativos, como a falta de compreensão do comportamento dos leads e a dificuldade em identificar oportunidades promissoras. Para superar esses desafios, estamos desenvolvendo uma ferramenta que utiliza análises avançadas de dados e Machine Learning.
+Nossa abordagem se baseia em estudos específicos do segmento de carros elétricos, comparando-os com o segmento de carros convencionais. O objetivo é fornecer insights detalhados sobre o comportamento de compra dos usuários de carros convencionais que investem valores equivalentes aos de carros elétricos. Com isso, visamos identificar se esses usuários podem se tornar potenciais compradores do segmento de carros elétricos.
+A ferramenta que estamos desenvolvendo permitirá compreender e prever o comportamento dos leads com alta precisão. Utilizando modelos preditivos aplicados a datasets tratados do setor automobilístico, buscamos fornecer insights valiosos que capacitem as empresas do setor de automóveis elétricos a tomar decisões estratégicas fundamentadas em dados.
+Esses insights não só ajudarão a segmentar campanhas de marketing de maneira mais eficaz, mas também permitirão a elaboração de ofertas de benefícios bancários e parcerias estratégicas. O objetivo final é acelerar a montagem, revenda e/ou fabricação de carros elétricos e pontos de recarga, impulsionando a eficiência na conversão de leads.
+Dessa forma, buscamos oferecer uma solução que beneficie todos os envolvidos, promovendo a sustentabilidade e contribuindo para o crescimento do mercado de carros elétricos. Ao capacitar as empresas com decisões estratégicas baseadas em dados, pretendemos não só melhorar a taxa de conversão de leads, mas também fomentar a inovação contínua e a liderança tecnológica no setor automobilístico.
+
 
 ## Java Advanced - Aplicação Java e Spring Boot
 
